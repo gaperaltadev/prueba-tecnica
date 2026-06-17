@@ -1,0 +1,21 @@
+# Compilación y temporales de .NET
+[Bb]in/
+[Oo]bj/
+
+# Base de datos local (SQLite)
+*.db
+*.db-shm
+*.db-wal
+
+# Configuraciones de entorno y secretos del IDE
+.env
+.env.*
+usersecrets.json
+.vs/
+.vscode/
+*.user
+*.suo
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
