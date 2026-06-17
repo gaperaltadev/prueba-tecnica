@@ -2,7 +2,16 @@
 
 Este proyecto consiste en el desarrollo de una API REST construida bajo los estándares más modernos de **.NET 10**, siguiendo una arquitectura limpia y desacoplada mediante la implementación de patrones como **CQRS**, **MediatR** y validaciones fluidas con **FluentValidation**. La persistencia de datos se gestiona localmente de forma automatizada mediante **Entity Framework Core** y **SQLite**.
 
----
+## 🛠️ Requisitos e Instalación
+
+Para ejecutar este proyecto de forma local, asegúrese de tener instalado el SDK oficial de **.NET 10.0** en su máquina.
+
+1. **Restaurar y Limpiar el Entorno:**
+   ```bash
+   dotnet clean
+   dotnet restore
+   dotnet build
+   dotnet run
 
 ## 🚀 Decisiones Técnicas y Justificaciones de Diseño
 
@@ -25,15 +34,6 @@ Durante el ciclo de desarrollo de esta solución se priorizó el equilibrio entr
 * Se activaron de manera permanente las extensiones de exploración de metadatos de Swagger con esquemas de seguridad basados en cabeceras de autenticación (`X-API-KEY`) de paso transparente hacia rutas administrativas, permitiendo auditar la documentación viva sin bloqueos del enrutador en cualquier entorno operativo (`Development` / `Production`).
 
 ---
-
-## 🛠️ Requisitos e Instalación
-
-Para ejecutar este proyecto de forma local, asegúrese de tener instalado el SDK oficial de **.NET 10.0** en su máquina.
-
-1. **Restaurar y Limpiar el Entorno:**
-   ```bash
-   dotnet clean
-   dotnet restore
 
 ## Quedo pendiente
 - Aplicar la solucion de los PUT endpoints a las demas entidades. Solo quedo bien implementado en users.
